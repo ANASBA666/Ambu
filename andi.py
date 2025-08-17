@@ -278,6 +278,6 @@ if __name__ == "__main__":
     print(ASCII_ART)
     check_ffmpeg()
     load_opus()
-    token = "YOUR_USER_TOKEN"  # Replace with your user token
+    token = "MTIwMTkwNDY4NjE0ODM2MjM3MQ.GhSrxE.kAnmorH8HAoifGjdcsUDCu8OmIpZibn4Qrl-7A"  # Replace with your user token
     validate_token(token)
     bot.run(token)
