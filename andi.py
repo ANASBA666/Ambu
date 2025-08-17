@@ -43,8 +43,7 @@ def load_opus():
         sys.exit()
 
 # Initialize bot
-intents = discord.Intents(guilds=True, message_content=True, voice_states=True)
-bot = commands.Bot(command_prefix="!", self_bot=True, intents=intents)
+bot = commands.Bot(command_prefix="!", self_bot=True)
 
 # Global variables
 current_vc = None
