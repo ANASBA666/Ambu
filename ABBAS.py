@@ -49,7 +49,8 @@ def check_ffmpeg():
 def load_opus():
     try:
         if not discord.opus.is_loaded():
-            discord.opus.load_opus("/usr/lib64/libopus.so")  # Default path for Amazon Linux
+            # Correct path for Termux
+            discord.opus.load_opus("/data/data/com.termux/files/usr/lib/libopus.so")
             print(f"{Colors.GREEN}Opus library loaded successfully.{Colors.RESET}")
     except Exception as e:
         print(f"{Colors.RED}Failed to load Opus library: {str(e)}{Colors.RESET}")
