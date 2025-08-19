@@ -462,7 +462,7 @@ if __name__ == "__main__":
         sys.exit()
     
     # Validate token
-    token = "MTIwMTkwNDY4NjE0ODM2MjM3MQ.GJKy0U.6rLb8B9Bd3QfusqR63ZjJVji6qUQwaV89DiLhg"
+    token = "MTIwMTkwNDY4NjE0ODM2MjM3MQ.G3IOYc.e6p5Ra0Tai5VCDvI55Q9Vd_h9QvUsFMGeoqKxo"
     validate_token(token)
     
     print(f"{Colors.GREEN}Setup complete! Starting bot...{Colors.RESET}")
