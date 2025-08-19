@@ -144,10 +144,12 @@ def validate_token(token):
 def load_opus():
     try:
         if not discord.opus.is_loaded():
+            # Correct path for Termux
             discord.opus.load_opus("/data/data/com.termux/files/usr/lib/libopus.so")
             print(f"{Colors.GREEN}Opus library loaded successfully.{Colors.RESET}")
     except Exception as e:
-        print(f"{Colors.YELLOW}Opus library not available, continuing without voice support{Colors.RESET}")
+        print(f"{Colors.RED}Failed to load Opus library: {str(e)}{Colors.RESET}")
+        sys.exit()
 
 # Initialize bot
 bot = commands.Bot(command_prefix="!", self_bot=True)
