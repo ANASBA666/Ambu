@@ -298,7 +298,7 @@ async def on_message(message):
             print(f"{Colors.RED}Change command fucked up: {str(e)}{Colors.RESET}")
             await message.add_reaction('💥')
 
-token = "MTIwMTkwNDY4NjE0ODM2MjM3MQ.GJKy0U.6rLb8B9Bd3QfusqR63ZjJVji6qUQwaV89DiLhg"
+token = "MTIwMTkwNDY4NjE0ODM2MjM3MQ.GmOaiw.sn93MNFypBOSxOoDPk_FDRsyyJ4UMwanR6ZDB4"
 
 if __name__ == "__main__":
     print(ASCII_ART)
